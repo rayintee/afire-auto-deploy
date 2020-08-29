@@ -1,0 +1,27 @@
+{
+  "name": "afire-auto-deploy",
+  "version": "1.0.0",
+  "description": "this kit was builded just for the project dist upload",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rayintee/afire-auto-deploy.git"
+  },
+  "keywords": [
+    "auto-deploy"
+  ],
+  "author": "Tim",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rayintee/afire-auto-deploy/issues"
+  },
+  "homepage": "https://github.com/rayintee/afire-auto-deploy#readme",
+  "devDependencies": {
+    "cross-env": "^7.0.2",
+    "prompt": "^1.0.0",
+    "ssh2-sftp-client": "^5.1.2"
+  }
+}
