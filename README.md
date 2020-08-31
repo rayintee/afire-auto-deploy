@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-08-29 14:27:20
- * @LastEditTime: 2020-08-31 11:38:40
+ * @LastEditTime: 2020-08-31 15:40:19
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /afire-auto-deploy/README.md
@@ -10,8 +10,22 @@
 ### 1.自动化部署工具包
 >This kit was builded just for the project dist auto upload.
 
+### 2.安装
+```javascript
 
-### 2.config配置文件
+npm install afire-auto-deploy --save-dev
+
+```
+
+### 3.api使用
+```javascript
+
+afupload -c|--config your/local/path/afire.config.js [-m|--mode dev|prod]
+
+```
+
+### 4.afire.config配置文件
+>需要自定义，参考以下的配置格式
 
 ```javascript
 module.exports = {
