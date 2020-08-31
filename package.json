@@ -1,6 +1,6 @@
 {
   "name": "afire-auto-deploy",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "this kit was builded just for the project dist upload",
   "main": "index.js",
   "bin": {
@@ -22,7 +22,7 @@
     "url": "https://github.com/rayintee/afire-auto-deploy/issues"
   },
   "homepage": "https://github.com/rayintee/afire-auto-deploy#readme",
-  "devDependencies": {
+  "dependencies": {
     "babel-preset-env": "^1.7.0",
     "babel-register": "^6.26.0",
     "commander": "^6.1.0",
@@ -31,6 +31,5 @@
     "package": "^1.0.1",
     "prompt": "^1.0.0",
     "ssh2-sftp-client": "^5.1.2"
-  },
-  "dependencies": {}
+  }
 }

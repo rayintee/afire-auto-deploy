@@ -21,7 +21,7 @@ program
             let {
                 mode = 'dev', config
             } = options
-            console.log('---->>', mode, config);
+            // console.log('---->>', mode, config);
 
             if (!config) {
                 config = 'afire.config.js';
