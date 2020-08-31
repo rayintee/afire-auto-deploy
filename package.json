@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "this kit was builded just for the project dist upload",
   "main": "index.js",
+  "bin": {
+    "afupload": "./bin/index"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -20,8 +23,14 @@
   },
   "homepage": "https://github.com/rayintee/afire-auto-deploy#readme",
   "devDependencies": {
+    "babel-preset-env": "^1.7.0",
+    "babel-register": "^6.26.0",
+    "commander": "^6.1.0",
     "cross-env": "^7.0.2",
+    "merge": "^1.2.1",
+    "package": "^1.0.1",
     "prompt": "^1.0.0",
     "ssh2-sftp-client": "^5.1.2"
-  }
+  },
+  "dependencies": {}
 }

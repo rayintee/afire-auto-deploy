@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-08-29 14:27:20
- * @LastEditTime: 2020-08-29 14:38:19
+ * @LastEditTime: 2020-08-31 11:38:40
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /afire-auto-deploy/README.md
@@ -29,11 +29,11 @@ module.exports = {
         "local_exclude_path": [],
 
         //远程部署的目录文件夹名
-        "remote_dir": "",
+        "remote_dir": "deploy_dir",
 
         //服务器要部署的文件夹目录
         //此为全路径配置属性
-        "remote_path": ""
+        "remote_path": "XXXX/XXX/deploy_dir"
     },
 
     //测试环境

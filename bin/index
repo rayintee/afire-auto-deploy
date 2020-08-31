@@ -1,0 +1,56 @@
+#!/usr/bin/env node
+
+const program = require('commander');
+const package = require('package')(module);
+const path = require("path");
+const fs = require("fs");
+const afire = require('../lib/index');
+
+///支持es6的模块
+require('babel-register')({
+    presets: ['env']
+});
+
+///定义配置文件
+program
+    .option('-m, --mode <dev|prod>', 'set up process env for upload env')
+    .option('-c, --config <config path>', 'quick define your upload config file.')
+    .action(function (options) {
+
+        try {
+            let {
+                mode = 'dev', config
+            } = options
+            console.log('---->>', mode, config);
+
+            if (!config) {
+                config = 'afire.config.js';
+            };
+
+            config = path.resolve(config);
+
+            ///判断文件是否存在 && 是否为空
+            let configPath = fs.readFileSync(config, 'utf-8');
+
+            if (!configPath) throw "afire upload config file NOT_FOUND."
+
+            if (configPath.length <= 0) throw "afire upload config file EMPTY.";
+
+            ///加载配置文件
+            let configOptions = require(config);
+
+            console.log(configOptions, configOptions.default)
+
+            ///开始执行上传操作
+            if (!configOptions.default) afire(mode, configOptions);
+            else afire(mode, configOptions);
+            
+        } catch (err) {
+            console.error(err);
+        }
+    });
+
+///定义版本号
+program.version(package.version);
+
+program.parse(process.argv);
