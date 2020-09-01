@@ -1,6 +1,6 @@
 {
   "name": "afire-auto-deploy",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "this kit was builded just for the project dist upload",
   "main": "index.js",
   "bin": {
