@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-08-29 14:27:20
- * @LastEditTime: 2020-08-31 15:40:19
+ * @LastEditTime: 2020-09-03 11:44:57
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /afire-auto-deploy/README.md
@@ -28,7 +28,7 @@ afupload -c|--config your/local/path/afire.config.js [-m|--mode dev|prod]
 >需要自定义，参考以下的配置格式
 
 ```javascript
-module.exports = {
+export default {
     //通用配置文件
     common: {
         //打包后的资源源文件存储的目标目录
