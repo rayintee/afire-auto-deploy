@@ -28,6 +28,9 @@ afupload -c|--config your/local/path/afire.config.js [-m|--mode dev|prod]
 >需要自定义，参考以下的配置格式
 
 ```javascript
+const path = require('path');
+const dist_path = path.resolve(__dirname, 'dist');
+
 export default {
     //通用配置文件
     common: {
