@@ -43,7 +43,7 @@ program
 
             ///开始执行上传操作
             if (!configOptions.default) afire(mode, configOptions);
-            else afire(mode, configOptions);
+            else afire(mode, configOptions.default);
 
         } catch (err) {
             console.error(err);
