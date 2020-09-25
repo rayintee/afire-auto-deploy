@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-08-29 14:27:20
- * @LastEditTime: 2020-09-03 21:01:21
+ * @LastEditTime: 2020-09-25 13:50:24
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /afire-auto-deploy/README.md
@@ -51,6 +51,10 @@ export default {
         //服务器要部署的文件夹目录
         //此为全路径配置属性
         "remote_path": "XXXX/XXX/deploy_dir",
+
+        //是否删除根节点所有文件&&文件夹后部署
+        //默认的false
+        "rmdir_all": false,
 
         success: (env) => {
             console.log("上传成功了，这是成功回调函数success 中执行的code----->>>>", env);
